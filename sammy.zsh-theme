@@ -20,7 +20,7 @@ function git_branch {
     # echo "("${ref#refs/heads/}") ";
     echo "${ref#refs/heads/}) ";
 }
-PROMPT='%{$fg_bold[yellow]%} ⚡%{$fg_bold[green]%}%p %{$fg[cyan]%}$(collapse_pwd) %{$fg_bold[blue]%}$(git_since_last_commit)%{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}'
+PROMPT='%{$fg_bold[yellow]%} ⚡%{$fg_bold[green]%}%p %{$fg[cyan]%} %2~ %{$fg_bold[blue]%}$(git_since_last_commit)%{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}'
 
 RPROMPT='[%F{green}%T%f]%{$reset_color%}'
 
